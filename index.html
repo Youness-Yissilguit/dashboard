@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Dashboard</title>
+</head>
+<body>
+  <!-- left navbar -->
+    <nav id="left_navbar">
+      <img class="burger_menu" src="./assets/burger_menu.svg" alt="">
+      <div class="icons">
+        <a href="#"><img src="./assets/bar-chart.svg" alt=""></a>
+        <a href="#"><img src="./assets/layout.svg" alt=""></a>
+        <a href="#"><img src="./assets/message-square.svg" alt=""></a>
+        <a class="active" href="#"><img src="./assets/flesh_up.svg" alt=""></a>
+        <a href="#"><img src="./assets/bell.svg" alt=""></a>
+        <a href="#"><img src="./assets/settings.svg" alt=""></a>
+      </div>
+      <div class="help"><a href="#"><img src="./assets/help-circle.svg" alt=""></a></div>
+    </nav>
+
+    <div id="content_wrapper">
+      <!-- top nnabar -->
+      <nav id="top_navbar">
+        <div class="my_container">
+          <form class="searsh">
+            <input type="text" placeholder="Recherche">
+            <button class="searsh_btn"><img src="./assets/search.svg" alt=""></button>
+          </form>
+          <div class="user_infos">
+            <a href="#"><img src="./assets/bell2.svg" alt=""></a>
+            <a href="#"><img src="./assets/email.svg" alt=""></a>
+            <div class="user_profil">
+              <img class="avatar" src="./assets/avatar.jpg" alt="">
+              <div class="">
+                <p class="name">Robert Downey</p>
+                <span class="job">Head of finance</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- thumbnails -->
+      <div class="my_container">
+        <div id="thumbnails">
+          <h1><a href="#">CIACAM</a> <img src="./assets/chevron-right.svg" alt=""></h1>
+          <h1><a href="#">Funding</a> <img src="./assets/chevron-right.svg" alt=""></h1>
+          <h1>Loan</h1>
+        </div>
+      </div>
+      <!-- dashboard content -->
+      <div class="my_container pb-5">
+        <div class="row mt-5">
+          <div class="col-md-8">
+            
+            <div id="your_loan">
+              <img class="dots" src="./assets/Arrow.svg" alt="">
+              <h3 class="heading">Your Loan <img src="./assets/chevron-down.svg" alt=""></h3>
+              <div class="statistics mt-3">
+                <div class="info">
+                  <p class="val_key text-info">Loan amount</p>
+                  <p class="value">€5,000,000</p>
+                </div>
+                <div class="info">
+                  <p class="val_key text-secondary">Outstanding balance</p>
+                  <p class="value">€3,000,000</p>
+                </div class="info">
+                <div class="info">
+                  <p class="val_key text-primary">Loan term</p>
+                  <p class="value"> €5,000,000</p>
+                </div>
+                <div class="info">
+                  <p class="val_key text-warning">Last  payement</p>
+                  <p class="value"> €5,000,000</p>
+                </div>
+                <div class="info">
+                  <p class="val_key text-danger">Next  payement</p>
+                  <p class="value"> €5,000,000</p>
+                </div>
+              </div>
+            </div>
+            <!-- General infos -->
+            <div id="general_infos">
+              <img class="dots" src="./assets/Arrow.svg" alt="">
+              <ul class="select_list mb-5">
+                <li>General terms</li>
+                <li>Condition precedent</li>
+                <li class="active">Condition subsequence</li>
+                <li>Securities</li>
+                <li>Covenants</li>
+                <li>Collateral Summary</li>
+                <li>Statements</li>
+                <li>Actions</li>
+              </ul>
+              <table id="cond_subs" class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Description</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Comment</th>
+                    <th scope="col" style="width:120px;">Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      Pledge and Guaranty Agreement are correct on and as of the date of such Advance, before and after giving effect to such Advance and to the application of the proceeds therefrom, as though made on and as of such date.
+                    </td>
+                    <td class="text-center"><img src="./assets/shape.svg" alt=""></td>
+                    <td>Execution and registration of the Fiducie-Surete by Maitre Bruno Robin Fiduciaire.</td>
+                    <td>
+                      Oct 10, 2021
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Pledge over Receivables.
+                    </td>
+                    <td class="text-center"><img src="./assets/shape.svg" alt=""></td>
+                    <td>Pledge executed over the bank account at BGCE Geneva.</td>
+                    <td>Oct 10, 2021</td>
+                  </tr>
+                  <tr>
+                    <td>Pledge over the Trade Finance Bank Account.</td>
+                    <td class="text-center"><img src="./assets/shape.svg" alt=""></td>
+                    <td>Pledge executed over the bank account at BGCE Geneva.</td>
+                    <td>Oct 10, 2021</td>
+                  </tr>
+                  <tr>
+                    <td>Pledge over the Trade Finance Bank Account.</td>
+                    <td class="text-center"><img src="./assets/shape.svg" alt=""></td>
+                    <td>Pledge executed over the bank account at BGCE Geneva.</td>
+                    <td>Oct 10, 2021</td>
+                  </tr>
+                  <tr>
+                    <td>Pledge over the Trade Finance Bank Account.</td>
+                    <td class="text-center"><img src="./assets/shape.svg" alt=""></td>
+                    <td>Pledge executed over the bank account at BGCE Geneva.</td>
+                    <td>Oct 10, 2021</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- calendar -->
+          <div class="col-md-4 pb-5">
+            <div class="container">
+            <div id="calendar">
+              <img class="dots" src="./assets/Arrow.svg" alt="">
+              <h3 class="heading">Your Calendar <img src="./assets/chevron-down.svg" alt=""></h3>
+              <!-- calendar -->
+              <div class="">
+                <div class="calendar">
+                  <div class="month">
+                    <i class="fas fa-angle-left prev"></i>
+                    <div class="date">
+                      <h1></h1>
+                      <p></p>
+                    </div>
+                    <i class="fas fa-angle-right next"></i>
+                  </div>
+                  <div class="weekdays">
+                    <div>Sun</div>
+                    <div>Mon</div>
+                    <div>Tue</div>
+                    <div>Wed</div>
+                    <div>Thu</div>
+                    <div>Fri</div>
+                    <div>Sat</div>
+                  </div>
+                  <div class="days"></div>
+                  
+                </div>
+        
+              </div>
+              <!-- tastks -->
+              <form class="searsh mt-3">
+                <input type="text" placeholder="Filter by keywords...">
+                <button class="searsh_btn"><img src="./assets/search.svg" alt=""></button>
+              </form>
+              <div class="tasks_container mt-5">
+                <div class="task mt-3">
+                  <h3>Tue,Mar 30</h3>
+                  <p>Payment of March</p>
+                </div>
+                <div class="task mt-3">
+                  <h3>Tue,Mar 30</h3>
+                  <p>Payment of March</p>
+                </div>
+                <div class="pagination mt-3">
+                  <a href="#"><img src="./assets/chevron-left.svg" alt=""></a>
+                  <a class="active" href="#"><img src="./assets/chevron-right.svg" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/jQuery v3-4-1.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
